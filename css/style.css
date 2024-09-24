@@ -10,8 +10,9 @@
     position: fixed;
     display: none;
     right: 30px;
-    bottom: 90px;
+    bottom: 20px;
     z-index: 99;
+    padding-top: .5rem;
 }
 
 .fw-bold {
@@ -514,6 +515,10 @@
     object-fit: cover !important;
 }
 
+
+/*============ Floating buttons CSS =======*/
+/* WHATSAPP */
+
 .whatsapp-button {
     display: flex;
     align-items: center;
@@ -541,9 +546,46 @@
     background-color: #22C35E; /* Slightly darker green on hover */
 }
 
+/* CALL */
+
+.call-phone-button {
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 20px;
+    bottom: 80px;
+    background-color: #000; /* WhatsApp Brand Color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
+}
+
+.call-phone-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.call-phone-button:hover {
+    background-color: #454545;
+    color: #fff;
+}
+
+
 
 @media screen and (max-width: 668px) {
     .main-logo img{
         width: 200px;
+    }
+
+    .back-to-top {
+        bottom: 90px;
+        padding-top: .5rem;
     }
 }
